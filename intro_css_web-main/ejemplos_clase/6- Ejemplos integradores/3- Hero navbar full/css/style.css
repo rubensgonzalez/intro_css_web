@@ -1,0 +1,113 @@
+/* Utilizando el selector universal (apunt a a todos) se eliminan
+ todos los margenes y paddings que se incluyen por defecto,
+ para poder apreciar como el elemento ocupa correctamente
+ todo el espacio indicado */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------- Header style ------- */
+
+/* Pintamos el fondo de la navbar de negro
+   y dejamos un relleno superior para separarlo del borde
+   de la página */
+   header {
+    background-color: black;
+    padding-top: 10px;
+  }
+  
+  /* Quitamos las viñetas de la lista */
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Manipulamos el texto que se muestra en la navbar */
+  #tituloNavbar {
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+  }
+  
+  /* fila de elementos del header */
+  /* formado por una lista de elementos (ul) */ 
+  header > nav > ul {
+    padding: 10px;
+  }
+
+/* ------- Main style (contenido principal) ------- */
+main {
+  background-image: url(../images/fondo.jpg);
+}
+
+/* ------- Article style ------- */
+
+/*
+- Establecer que el artículo (la card) tome todo el ancho
+  disponible --> width: 100%
+- Dejar un relleno de 10px
+*/
+article {
+  width: 100%;
+  padding: 10px;
+}
+
+/* 
+- Centrar todo el texto contenido en titulo
+*/
+.titulo {
+  text-align: center;
+}
+
+/* Modificar el texto en línea en el título del artículo */
+.titulo > span {
+  font-size: 40px;
+}
+
+/* Modificar el parrafo en el título del artículo */
+.titulo > p {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+/* 
+- Centrar todo el texto contenido en descripcion
+- Dejar un margen de 20px respecto a los otros elementos
+*/
+.descripcion {
+  margin: 20px;
+  text-align: center;
+}
+
+/*
+- Pintar de color el parrafo en descripcion
+*/
+.descripcion > p {
+  color: gray;
+}
+
+/*
+- Pintar de color el link en descripcion
+*/
+.descripcion > a {
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 20px;
+}
+
+article img {
+  width: 500px;
+}
+
+/* ------- Footer style ------- */
+
+footer {
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+footer > span {
+  color: white;
+  font-size: 20px;
+}
